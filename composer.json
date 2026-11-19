@@ -1,0 +1,58 @@
+{
+    "name": "alphaquantum/aiagentblocklist",
+    "description": "PHP feed client for the AI agent blocklist from aiagentblocklist.com: sync the daily files and check domains, extensions, processes and packages locally.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://www.aiagentblocklist.com",
+    "keywords": [
+        "ai-agents",
+        "ai-agent-blocklist",
+        "blocklist",
+        "ai-browser",
+        "mcp",
+        "coding-agents",
+        "browser-extensions",
+        "dns-filtering",
+        "firewall",
+        "mdm",
+        "shadow-ai",
+        "ai-governance"
+    ],
+    "authors": [
+        {
+            "name": "Alpha Quantum",
+            "email": "info@alpha-quantum.com",
+            "homepage": "https://www.aiagentblocklist.com"
+        }
+    ],
+    "support": {
+        "email": "info@alpha-quantum.com",
+        "issues": "https://www.aiagentblocklist.com/contact.php",
+        "source": "https://github.com/explainableaixai/aiagentblocklist-php",
+        "docs": "https://github.com/explainableaixai/aiagentblocklist-php#readme"
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "AiAgentBlocklist\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AiAgentBlocklist\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit tests"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
